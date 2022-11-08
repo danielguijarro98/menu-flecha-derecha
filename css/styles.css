@@ -1,0 +1,52 @@
+.box-menu {
+    height: 200px;
+    width: 200px;
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bar {
+    width: 150px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.menu-bar::after {
+    content: '';
+    position: absolute;
+    transform: translateY(-30px);
+    width: 150px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.menu-bar::before {
+    content: '';
+    position: absolute;
+    transform: translateY(30px);
+    width: 150px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.menu-bar--arrow{
+    background-color: black;
+    transition-duration: 1s;
+}
+.menu-bar--arrow::after{
+    transform: rotate(30deg) translateY(-40px);
+    background-color: black;
+    transition-duration: 1s;
+   
+}
+
+.menu-bar--arrow::before{
+    transform: rotate(-30deg) translateY(40px);
+    background-color: black;
+    transition-duration: 1s;
+}
